@@ -10,10 +10,10 @@ if(num<100 || num >999)
 }
 else
 {
-string S=Convert.ToString(num);
+        //string S=Convert.ToString(num);
 
         Console.Write("2я цифра:");
-
-        Console.WriteLine(S[1]);
+        Console.WriteLine(num /10 % 10);
+        //Console.WriteLine(S[1]);
     
 }
