@@ -1,24 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Задача 2: Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее");
-int num1,num2;
-Console.Write("Введите 1е число:");
-num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите 2е число:");
-num2 = Convert.ToInt32(Console.ReadLine());
-if(num1==num2)
+Console.WriteLine("Задача 10: Программа, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
+
+Console.Write("Введите 3х значное число:");
+int num = Convert.ToInt32(Console.ReadLine());
+if(num<100 || num >999)
 
 {
-    Console.WriteLine("числа равны");
-    }
+    Console.WriteLine("введено не 3х значное число");
+}
 else
 {
+string S=Convert.ToString(num);
 
-    if(num1>num2)
-    {
-        Console.WriteLine("1е число больше 2го");
-    }
-    else
-    {
-        Console.WriteLine("2е число больше 1го");
-    }
+        Console.Write("2я цифра:");
+
+        Console.WriteLine(S[1]);
+    
 }
